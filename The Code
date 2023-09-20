@@ -1,0 +1,16 @@
+Gewicht = input("Geben sie ihr gewicht in Kilogramm an: ")
+cm = input("Bitte geben sie ihre Größe in cm an: ")
+Meter = float(cm)/100
+Quadrat = (float(Meter)*float(Meter))
+BMI= float(Gewicht)/float(Quadrat)
+print("Ihr BMI beträgt "+str(BMI))
+int(BMI)
+
+if BMI < 18.5:
+    print("Sie sind Untergewichtig")
+elif BMI >= 18.5 and BMI <= 24.9:
+    print("sie sind normalgewichtig")
+elif BMI >= 25 and BMI <= 32:
+    print("sie sind Übergewichtig")
+elif BMI >= 33:
+    print("sie sind Stark Übergewichtig")
